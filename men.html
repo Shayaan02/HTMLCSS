@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/men.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Bebas Neue"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/0aa8875de4.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+    <title>Document</title>
+  </head>
+  <h1 class="header">Men</h1>
+  <div class="nav-bar">
+    <a href="index.html"> Home </a>
+    <a href="men.html"> Men </a>
+    <a href="women.html"> Women</a>
+    <a href="contact.html"> Contact</a>
+    <a href="about.html"> About</a>
+    <a href="#" onclick="toggleCart()">
+      <i class="fa-solid fa-cart-shopping fa-beat" style="color: #121212"></i>
+    </a>
+  </div>
+  <body>
+    <div id="cart" style="display: none">
+      <button class="closeCart" onclick="closeCart()">Close</button>
+      <h2>Cart</h2>
+      <ul id="cart-items-list"></ul>
+      <button> Go to Checkout!</button>
+    </div>
+
+    <div class="men-container">
+      <div class="item">
+        <img src="images/jordan1.jpeg" alt="" />
+        <p class="best-seller"><strong> Best seller </strong></p>
+        <p class="shoe-name">Air Jordan 1 Retro High</p>
+        <p class="shoe-type">Men's shoes</p>
+        <p class="shoe-colors">5 Colours</p>
+        <p class="shoe-price">2 199kr</p>
+        <button
+          onclick="addToCart('Air Jordan 1 Retro High', 'images/jordan1.jpeg', '2 199kr', 'Men\'s shoes')"
+        >
+          Add To Cart
+        </button>
+      </div>
+      <div class="item">
+        <img src="images/jordan2.jpeg" alt="" />
+        <p class="best-seller">Best seller</p>
+        <p class="shoe-name">Air Jordan 1 Mid</p>
+        <p class="shoe-type">Men's shoes</p>
+        <p class="shoe-colors">5 Colours</p>
+        <p class="shoe-price">2 199kr</p>
+        <button
+          onclick="addToCart('Air Jordan 1 Mid', 'images/jordan2.jpeg', '2 199kr', 'Men\'s shoes')"
+        >
+          Add To Cart
+        </button>
+      </div>
+      <div class="item">
+        <img src="images/jordan3.jpeg" alt="" />
+        <p class="best-seller">Best seller</p>
+        <p class="shoe-name">Jordan 7</p>
+        <p class="shoe-type">Men's shoes</p>
+        <p class="shoe-colors">5 Colours</p>
+        <p class="shoe-price">2 199kr</p>
+        <button
+          onclick="addToCart('Jordan 7', 'images/jordan3.jpeg', '2 199kr', 'Men\'s shoes')"
+        >
+          Add To Cart
+        </button>
+      </div>
+      <div class="item">
+        <img src="images/jordanmvp.jpeg" alt="" />
+        <p class="shoe-name">Jumpman MVP</p>
+        <p class="shoe-type">Men's shoes</p>
+        <p class="shoe-colors">1 Color</p>
+        <div class="sale-price">
+          <p class="shoe-price">2 199kr</p>
+          <p class="new-price">1 400kr</p>
+        </div>
+        <p class="sale">27% OFF</p>
+        <button
+          onclick="addToCart('Jumpman MVP', 'images/jordanmvp.jpeg', '1 400kr', 'Men\'s shoes')"
+        >
+          Add To Cart
+        </button>
+      </div>
+      <div class="item">
+        <a href="index.html">
+          <img src="images/jordangolf.jpeg" alt="" />
+        </a>
+        <p class="best-seller">New in</p>
+        <p class="shoe-name">Air Jordan 1 Low G</p>
+        <p class="shoe-type">Men's golf shoes</p>
+        <p class="shoe-colors2">1 Color</p>
+        <p class="shoe-price">1 499kr</p>
+        <button
+          onclick="addToCart('Air Jordan 1 Low G', 'images/jordangolf.jpeg', '1 499kr', 'Men\'s shoes')"
+        >
+          Add To Cart
+        </button>
+      </div>
+      <div class="item">
+        <img src="images/jordan13.jpeg" alt="" />
+        <p class="best-seller">New in</p>
+        <p class="shoe-name">Air Jordan 13 Retro</p>
+        <p class="shoe-type">Men's shoes</p>
+        <p class="shoe-colors2">1 Color</p>
+        <p class="shoe-price">2 600kr</p>
+        <button
+          onclick="addToCart('Air Jordan 13 Retro', 'images/jordan13.jpeg', '2 600kr', 'Men\'s shoes')"
+        >
+          Add To Cart
+        </button>
+      </div>
+    </div>
+    <footer>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt quibusdam
+      tenetur assumenda quasi possimus, veniam magni repellat exercitationem?
+      Atque vitae culpa at eveniet eaque error dolorum consectetur cumque.
+      Nostrum voluptatibus porro eos asperiores delectus aliquam nihil sequi,
+      sed, eius soluta excepturi quaerat rerum itaque animi? Tempora libero ut
+      magnam perferendis!
+    </footer>
+  </body>
+</html>

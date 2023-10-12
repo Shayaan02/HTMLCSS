@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/women.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Bebas Neue"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/0aa8875de4.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+    <title>Document</title>
+  </head>
+  <div id="cart" style="display: none">
+    <button class="closeCart" onclick="closeCart()">Close</button>
+    <h2>Cart</h2>
+    <ul id="cart-items-list"></ul>
+    <button> Go to Checkout!</button>
+  </div>
+  <h1 class="header">Women</h1>
+  <div class="nav-bar">
+    <a href="index.html"> Home </a>
+    <a href="men.html"> Men </a>
+    <a href="women.html"> Women</a>
+    <a href="contact.html"> Contact</a>
+    <a href="about.html"> About</a>
+    <a href="#" onclick="toggleCart()">
+      <i class="fa-solid fa-cart-shopping fa-beat" style="color: #121212"></i>
+    </a>
+  </div>
+  <body>
+    <div class="men-container">
+      <div class="item">
+        <img src="images/jordan1low.png" alt="" />
+        <p class="shoe-name">Air Jordan 1 Low</p>
+        <p class="shoe-type">Women's shoes</p>
+        <p class="shoe-colors">3 Colours</p>
+        <p class="shoe-price">1 499kr</p>
+        <button
+          onclick="addToCart('Air Jordan 1 Mid', 'images/jordan2.jpeg', '2 199kr', 'Men\'s shoes')"
+        >
+          Add To Cart
+        </button>
+      </div>
+      <div class="item">
+        <img src="images/jordan.png" alt="" />
+        <p class="shoe-name">Air Jordan 1 Mid</p>
+        <p class="shoe-type">Women's shoes</p>
+        <p class="shoe-colors">5 Colours</p>
+        <p class="shoe-price">2 199kr</p>
+        <button
+          onclick="addToCart('Air Jordan 1 Mid', 'images/jordan.png', '2 199kr', 'Women\'s shoes')"
+        >
+          Add To Cart
+        </button>
+      </div>
+      <div class="item">
+        <img src="images/airjordanwom.png" alt="" />
+        <p class="shoe-name">Air Jordan 1 Low SE</p>
+        <p class="shoe-type">Women's shoes</p>
+        <p class="shoe-colors">1 Colour</p>
+        <p class="shoe-price">1599kr</p>
+        <button
+          onclick="addToCart('Air Jordan 1 Low SE', 'images/airjordanwom.png', '1 599kr', 'Women\'s shoes')"
+        >
+          Add To Cart
+        </button>
+      </div>
+    </div>
+    <footer>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi esse veniam
+      accusantium totam, nostrum dignissimos perferendis error molestias. Sint
+      velit cumque, minima exercitationem ducimus natus suscipit assumenda
+      provident numquam modi vel fugit? Odio ab vero accusamus error laboriosam
+      eius. Vitae recusandae, vel mollitia alias voluptate quo quam? Veniam,
+      reiciendis impedit.
+    </footer>
+  </body>
+</html>
